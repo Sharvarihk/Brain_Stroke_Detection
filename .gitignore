@@ -1,0 +1,17 @@
+# Virtual environments
+venv/
+.env/
+
+# Cache
+__pycache__/
+model_cache/
+
+# Large binary files
+*.dll
+*.pyd
+*.so
+*.h5
+
+# OS files
+.DS_Store
+Thumbs.db
