@@ -31,7 +31,7 @@ print("="*60)
 
 # Get Hugging Face repo and token from environment variables
 HF_REPO_ID = os.getenv('HF_REPO_ID', 'Sharvarihk/CNNBasedBrainStrokeDetection')
-HF_TOKEN = os.getenv('HF_TOKEN', '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')  # Optional, for private repos
+HF_TOKEN = os.getenv('HF_TOKEN', '')  # Optional, for private repos
 
 try:
     predictor = StrokePredictionInterface(
