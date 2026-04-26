@@ -412,7 +412,7 @@ def main():
     # Initialize with Hugging Face repo
     predictor = StrokePredictionInterface(
         hf_repo_id="Sharvarihk/CNNBasedBrainStrokeDetection",  # Replace with your HF repo
-        hf_token="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"  # Add token if private repo
+        hf_token=os.getenv('HF_TOKEN', '')  # Add token if private repo
     )
     
     # Example: Predict on a single image
